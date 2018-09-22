@@ -109,3 +109,8 @@ having `index.html` in the `layouts/` folder of the site. A similar strategy is 
 ## Deploying with GitHub
 
 I am following the official [hugo doc](https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages) for this.
+
+There are two git repos: One for the source, and another one for the generated site. The generated site is in the `public/` folder of the source
+repo (with `public/` in `.gitignore` to avoid source controlling two times the generated site)
+
+Typing `hugo` just generates the website in `public/`. `hugo serve` is used for local display.
