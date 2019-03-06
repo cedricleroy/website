@@ -18,3 +18,9 @@ draft: false
 ```
 >> git status -u
 ```
+
+## Update last commit
+```
+>> git commit --amend
+>> git push origin <branch> --force
+```
