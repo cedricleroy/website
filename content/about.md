@@ -6,7 +6,7 @@ draft: false
 
 I am a software developer / engineer working on renewable energies applications. 
 
-I mainly use Python, but also Angular and Go.
+I mainly use Python, but also Angular and Rust.
 
 [github](https://github.com/cedricleroy)
 
