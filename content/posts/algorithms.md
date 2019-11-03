@@ -41,3 +41,4 @@ def merge_sort(l):
 * At level $j$, we have $2^j$ sub-problems, of size $\frac{n}{2^j}$
 * Each sub-problem do $x$ operation.
 * So we have $x \cdot n \cdot log_2(n) + x \cdot n$ operations.
+* Removing lower order term and leading constant factor: $O(n \cdot log(n))$
