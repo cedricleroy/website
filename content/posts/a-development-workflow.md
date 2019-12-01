@@ -22,24 +22,30 @@ Since I recentely came back to MacOS / Linux, I felt the need to restore my "old
 A couple of years now I have been using `Vim`. I still feel as a newbie considering the wide options it offers, but also feel
 productive with it. I use it in the shell, but also with `Sublime Text` and `VS Code` thanks to the plugins.
 
-`Vim` in the shell with some configuration and plugins is a killer tool for developping in Python.
+`Vim` in the shell with some configuration and plugins is a killer tool for developping in any language.
 ![vim](/vim.png)
 
 [Here](https://github.com/cedricleroy/config/blob/master/.vimrc) is my vim configuration file (`.vimrc`). Here is what is worth
 mentionning:
 
-* I use [vundle](https://github.com/cedricleroy/config/blob/master/.vimrc) as vim package manager.
-  Installing a plugin is simple: ``:PluginInstall``
+* I use [vundle](https://github.com/VundleVim/Vundle.vim) as vim package manager.
+  Installing a plugin is simple: ``:PluginInstall``, after adding ``Plugin "<name>"`` in ``.vimrc``.
 * My leader key is `\`
 * Plugins:
-  * Nerdtree (left of the screenshot above)
-  * Vim colorschemes (I usually use `molokai`).
-  * `ctrp`: Fuzzy file finder. I tend to use `fzf` more now.
-  * Vim airline with themes for status/tabline. 
-  * `ale` for async linting.
-  * `jedi` for Python autocompletion.
-  * `ack` as search tool.
-  * `fzf` as main fuzzy file finder.
+  * [Nerdtree](https://github.com/scrooloose/nerdtree) (left buffer of the screenshot above)
+  * [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin): A plugin of NERDTree showing git status flags.
+  * [VimDevIcons](https://github.com/ryanoasis/vim-devicons). This plugin is to have file icons showing up in the menu (like VSCode). It requires having a patched font (I am using Fira Code with ligatures enabled as standard font, and Hack Nerd Font as Non-ASCII font). Those needs be be configured in the terminal (iTerm2 in my case). They are installed with the following commands on Mac:
+  ```
+  brew tap homebrew/cask-fonts
+  brew cask install font-fira-code
+  brew cask install font-hack-nerd-font
+  ```
+  * [colorschemes](https://github.com/flazz/vim-colorschemes) (I usually use `molokai`).
+  * Vim [airline](https://github.com/vim-airline/vim-airline) with [airline-themes](https://github.com/vim-airline/vim-airline-themes) for status/tabline. 
+  * [ale](https://github.com/dense-analysis/ale) for async linting.
+  * [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) for autocompletion.
+  * [Vim Fugitive](https://github.com/tpope/vim-fugitive) as Git wrapper.
+  * [fzf](https://github.com/junegunn/fzf) as main fuzzy file finder.
 * A few key binding:
   * `jj` as second `ESC`.
   * `TAB` with `.` (repeat)
